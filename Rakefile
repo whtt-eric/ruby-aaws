@@ -11,7 +11,7 @@ begin
     gemspec.description = 'Ruby/AWS is a Ruby wrapper to the Amazon Product Advertising API. This version works with heroku as it looks for the .amazonrc file in Rails.root/config'
     gemspec.authors = ['Ian McDonald']
   end
-  #Jeweler::GemcutterTasks.new
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts 'Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler'
 end
