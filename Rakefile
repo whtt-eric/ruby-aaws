@@ -4,12 +4,12 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = 'papercavalier-ruby-aaws'
+    gemspec.name = 'treyconnell-ruby-aaws'
     gemspec.summary = 'Ruby/AWS is a Ruby wrapper to the Amazon Product Advertising API.'
-    gemspec.email = 'code@papercavalier.com'
-    gemspec.homepage = 'http://github.com/papercavalier/ruby-aaws'
-    gemspec.description = 'Ruby/AWS is a Ruby wrapper to the Amazon Product Advertising API.'
-    gemspec.authors = ['Ian Macdonald']
+    gemspec.email = 'trey.connell@gmail.com'
+    gemspec.homepage = 'https://github.com/treyconnell/ruby-aaws'
+    gemspec.description = 'Ruby/AWS is a Ruby wrapper to the Amazon Product Advertising API. This version works with heroku as it looks for the .amazonrc file in Rails.root/config'
+    gemspec.authors = ['Ian McDonald']
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
