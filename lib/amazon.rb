@@ -90,17 +90,17 @@ module Amazon
 	# Figure out where home is. The locations after HOME are for Windows.
 	# [ruby-core:12347]
 	#
-	hp = nil
-	if ENV.key?( 'HOMEDRIVE' ) && ENV.key?( 'HOMEPATH' )
-	  hp = ENV['HOMEDRIVE'] + ENV['HOMEPATH']
-	end
-	home = ENV['AMAZONRCDIR'] || ENV['HOME'] || hp || ENV['USERPROFILE']
+	# hp = nil
+	# if ENV.key?( 'HOMEDRIVE' ) && ENV.key?( 'HOMEPATH' )
+	#   hp = ENV['HOMEDRIVE'] + ENV['HOMEPATH']
+	# end
+	# home = ENV['AMAZONRCDIR'] || ENV['HOME'] || hp || ENV['USERPROFILE']
 
 	user_rcfile = File.join(Rails.root, 'config/.amazonrc')
 
-	if home
-	  config_files << File.expand_path( File.join( home, user_rcfile ) )
-	end
+	# if home
+	#   config_files << File.expand_path( File.join( home, user_rcfile ) )
+	# end
 
 	config_class = File
       end
