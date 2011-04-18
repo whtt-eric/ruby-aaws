@@ -97,6 +97,7 @@ module Amazon
 	# home = ENV['AMAZONRCDIR'] || ENV['HOME'] || hp || ENV['USERPROFILE']
 
 	user_rcfile = File.join(Rails.root, 'config/.amazonrc')
+  config_files << user_rcfile
 
 	# if home
 	#   config_files << File.expand_path( File.join( home, user_rcfile ) )
