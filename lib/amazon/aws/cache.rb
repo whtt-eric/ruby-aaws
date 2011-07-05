@@ -57,11 +57,11 @@ module Amazon
 
 	::FileUtils::mkdir_p( path ) unless File.exists? path
 
-	unless File.directory? path 
+	unless File.directory? path
 	  raise PathError, "cache path #{path} is not a directory"
 	end
 
-	unless File.readable? path 
+	unless File.readable? path
 	  raise PathError, "cache path #{path} is not readable"
 	end
 
@@ -98,7 +98,7 @@ module Amazon
 	return nil unless File.exist? cache_file
 
 	Amazon.dprintf( 'Fetching %s from cache...', digest )
-	File.open( File.join( cache_file ) ).readlines.to_s
+	File.open( cache_file ).readlines.join().to_s
       end
 
 
